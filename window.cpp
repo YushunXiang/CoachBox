@@ -677,7 +677,7 @@ void Window::updateCoachinfo()
     default:
         break;
     }
-    printLog("调试指令更新:Head=0 MatchMode=" + QString().setNum(coach_info.MatchMode) + "MatchType=" + QString().setNum(coach_info.MatchType));
+    printLog("调试指令更新:Head=0 MatchMode=" + QString().setNum(coach_info.MatchMode) + " MatchType=" + QString().setNum(coach_info.MatchType));
 }
 void Window::resetCoachinfo()
 {
