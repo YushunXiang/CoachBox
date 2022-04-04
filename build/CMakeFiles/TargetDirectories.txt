@@ -1,9 +1,0 @@
-/home/alan/CoachBox/build/CMakeFiles/rebuild_cache.dir
-/home/alan/CoachBox/build/CMakeFiles/edit_cache.dir
-/home/alan/CoachBox/build/CMakeFiles/CoachBox.dir
-/home/alan/CoachBox/build/CMakeFiles/CoachBox_autogen.dir
-/home/alan/CoachBox/build/rtdb/CMakeFiles/rebuild_cache.dir
-/home/alan/CoachBox/build/rtdb/CMakeFiles/edit_cache.dir
-/home/alan/CoachBox/build/rtdb/CMakeFiles/comm.dir
-/home/alan/CoachBox/build/rtdb/CMakeFiles/multicast.dir
-/home/alan/CoachBox/build/rtdb/CMakeFiles/rtdb.dir
