@@ -260,30 +260,29 @@ Window::Window(QWidget *parent)
                                  "border-bottom-right-radius:10px;}";
     coachinfo_panel_combobox1 = new QComboBox(coachinfo_panel_cbtext1);
     coachinfo_panel_combobox1->setStyleSheet(ComboboxSheetstyle);
-    coachinfo_panel_combobox1->addItem("No Item");
+    coachinfo_panel_combobox1->addItem("OUR_KICKOFF");
+    coachinfo_panel_combobox1->addItem("OPP_KICKOFF");
+    coachinfo_panel_combobox1->addItem("OUR_THROWIN");
+    coachinfo_panel_combobox1->addItem("OPP_THROWIN");
+    coachinfo_panel_combobox1->addItem("OUR_PENALTY");
+    coachinfo_panel_combobox1->addItem("OPP_PENALTY");
+    coachinfo_panel_combobox1->addItem("OUR_GOALKICK");
+    coachinfo_panel_combobox1->addItem("OPP_GOALKICK");
+    coachinfo_panel_combobox1->addItem("OUR_CORNERKICK");
+    coachinfo_panel_combobox1->addItem("OPP_CORNERKICK");
+    coachinfo_panel_combobox1->addItem("OUR_FREEKICK");
+    coachinfo_panel_combobox1->addItem("OPP_FREEKICK");
+    coachinfo_panel_combobox1->addItem("DROPBALL");
+    coachinfo_panel_combobox1->addItem("LOCATION");
+    coachinfo_panel_combobox1->addItem("AVOIDANCE");
+    coachinfo_panel_combobox1->addItem("PASSING");
+    coachinfo_panel_combobox1->addItem("CHECKGIGE");
     coachinfo_panel_combobox1->move(85,0);
     coachinfo_panel_combobox2 = new QComboBox(coachinfo_panel_cbtext2);
     coachinfo_panel_combobox2->setStyleSheet(ComboboxSheetstyle);
     coachinfo_panel_combobox2->addItem("STOPROBOT");
-    coachinfo_panel_combobox2->addItem("OUR_KICKOFF");
-    coachinfo_panel_combobox2->addItem("OPP_KICKOFF");
-    coachinfo_panel_combobox2->addItem("OUR_THROWIN");
-    coachinfo_panel_combobox2->addItem("OPP_THROWIN");
-    coachinfo_panel_combobox2->addItem("OUR_PENALTY");
-    coachinfo_panel_combobox2->addItem("OPP_PENALTY");
-    coachinfo_panel_combobox2->addItem("OUR_GOALKICK");
-    coachinfo_panel_combobox2->addItem("OPP_GOALKICK");
-    coachinfo_panel_combobox2->addItem("OUR_CORNERKICK");
-    coachinfo_panel_combobox2->addItem("OPP_CORNERKICK");
-    coachinfo_panel_combobox2->addItem("OUR_FREEKICK");
-    coachinfo_panel_combobox2->addItem("OPP_FREEKICK");
-    coachinfo_panel_combobox2->addItem("DROPBALL");
     coachinfo_panel_combobox2->addItem("STARTROBOT");
     coachinfo_panel_combobox2->addItem("PARKINGROBOT");
-    coachinfo_panel_combobox2->addItem("LOCATION");
-    coachinfo_panel_combobox2->addItem("AVOIDANCE");
-    coachinfo_panel_combobox2->addItem("PASSING");
-    coachinfo_panel_combobox2->addItem("CHECKGIGE");
     coachinfo_panel_combobox2->move(85,0);
     coachinfo_panel_combobox3 = new QComboBox(coachinfo_panel_cbtext3);
     coachinfo_panel_combobox3->setStyleSheet(ComboboxSheetstyle);
@@ -602,66 +601,73 @@ void Window::updateCoachinfo()
 {
     coach_info.Head=0;
     coach_info.MatchType=0;
+
+    switch (coachinfo_panel_combobox1->currentIndex()) {
+    case 0:
+        coach_info.MatchMode=OUR_KICKOFF;
+        break;
+    case 1:
+        coach_info.MatchMode=OPP_KICKOFF;
+        break;
+    case 2:
+        coach_info.MatchMode=OUR_THROWIN;
+        break;
+    case 3:
+        coach_info.MatchMode=OPP_THROWIN;
+        break;
+    case 4:
+        coach_info.MatchMode=OUR_PENALTY;
+        break;
+    case 5:
+        coach_info.MatchMode=OPP_PENALTY;
+        break;
+    case 6:
+        coach_info.MatchMode=OUR_GOALKICK;
+        break;
+    case 7:
+        coach_info.MatchMode=OPP_GOALKICK;
+        break;
+    case 8:
+        coach_info.MatchMode=OUR_CORNERKICK;
+        break;
+    case 9:
+        coach_info.MatchMode=OPP_CORNERKICK;
+        break;
+    case 10:
+        coach_info.MatchMode=OUR_FREEKICK;
+        break;
+    case 11:
+        coach_info.MatchMode=OPP_FREEKICK;
+        break;
+    case 12:
+        coach_info.MatchMode=DROPBALL;
+        break;
+    /// Challenge
+    case 13:
+        coach_info.MatchMode=LOCATION;
+        break;
+    case 14:
+        coach_info.MatchMode=AVOIDANCE;
+        break;
+    case 15:
+        coach_info.MatchMode=PASSING;
+        break;
+    case 16:
+        coach_info.MatchMode=CHECKGIGE;
+        break;
+    default:
+        break;
+    }
+
     switch (coachinfo_panel_combobox2->currentIndex()) {
     case 0:
         coach_info.MatchMode=STOPROBOT;
         break;
     case 1:
-        coach_info.MatchMode=OUR_KICKOFF;
-        break;
-    case 2:
-        coach_info.MatchMode=OPP_KICKOFF;
-        break;
-    case 3:
-        coach_info.MatchMode=OUR_THROWIN;
-        break;
-    case 4:
-        coach_info.MatchMode=OPP_THROWIN;
-        break;
-    case 5:
-        coach_info.MatchMode=OUR_PENALTY;
-        break;
-    case 6:
-        coach_info.MatchMode=OPP_PENALTY;
-        break;
-    case 7:
-        coach_info.MatchMode=OUR_GOALKICK;
-        break;
-    case 8:
-        coach_info.MatchMode=OPP_GOALKICK;
-        break;
-    case 9:
-        coach_info.MatchMode=OUR_CORNERKICK;
-        break;
-    case 10:
-        coach_info.MatchMode=OPP_CORNERKICK;
-        break;
-    case 11:
-        coach_info.MatchMode=OUR_FREEKICK;
-        break;
-    case 12:
-        coach_info.MatchMode=OPP_FREEKICK;
-        break;
-    case 13:
-        coach_info.MatchMode=DROPBALL;
-        break;
-    case 14:
         coach_info.MatchMode=STARTROBOT;
         break;
-    case 15:
+    case 2:
         coach_info.MatchMode=PARKINGROBOT;
-        break;
-    case 16:
-        coach_info.MatchMode=LOCATION;
-        break;
-    case 17:
-        coach_info.MatchMode=AVOIDANCE;
-        break;
-    case 18:
-        coach_info.MatchMode=PASSING;
-        break;
-    case 19:
-        coach_info.MatchMode=CHECKGIGE;
         break;
     default:
         break;
