@@ -1,0 +1,4 @@
+# Hashes of file build rules.
+cddcc3e7e9f3474755aa7f63552a6980 CMakeFiles/CoachBox_autogen
+cddabda503f4915a650dc4feac49e3ff CoachBox_autogen/EWIEGA46WW/qrc_res.cpp
+f959864761bbbc6894ebc9d494c9973e ui_window.h

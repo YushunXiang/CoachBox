@@ -1,0 +1,36 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icons/ball.png</file>
+        <file>icons/field_remake.png</file>
+        <file>icons/help_hover.png</file>
+        <file>icons/help_normal.png</file>
+        <file>icons/help_press.png</file>
+        <file>icons/info_hover.png</file>
+        <file>icons/info_normal.png</file>
+        <file>icons/info_press.png</file>
+        <file>icons/margin.png</file>
+        <file>icons/more.png</file>
+        <file>icons/robot1mark.png</file>
+        <file>icons/robot2mark.png</file>
+        <file>icons/robot3mark.png</file>
+        <file>icons/robotmark.png</file>
+        <file>icons/settings_hover.png</file>
+        <file>icons/settings_normal.png</file>
+        <file>icons/settings_press.png</file>
+        <file>icons/信息空心.png</file>
+        <file>icons/endcomm_normal.png</file>
+        <file>icons/startcomm_normal.png</file>
+        <file>icons/warning.png</file>
+        <file>icons/设置.png</file>
+        <file>icons/close_hover.png</file>
+        <file>icons/close_normal.png</file>
+        <file>icons/close_press.png</file>
+        <file>icons/minimize_hover.png</file>
+        <file>icons/minimize_normal.png</file>
+        <file>icons/minimize_press.png</file>
+        <file>icons/endcomm_hover.png</file>
+        <file>icons/endcomm_press.png</file>
+        <file>icons/startcomm_hover.png</file>
+        <file>icons/startcomm_press.png</file>
+    </qresource>
+</RCC>
