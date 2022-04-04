@@ -188,8 +188,6 @@ QtCore/qbytearray.h
 QtCore/qmetatype.h
 -
 
-/home/alan/CoachBox/build/CoachBox_autogen/EWIEGA46WW/qrc_res.cpp
-
 /home/alan/CoachBox/build/CoachBox_autogen/mocs_compilation.cpp
 EWIEGA46WW/moc_custombtn.cpp
 /home/alan/CoachBox/build/CoachBox_autogen/EWIEGA46WW/moc_custombtn.cpp
@@ -201,12 +199,6 @@ EWIEGA46WW/moc_tcpclient.cpp
 /home/alan/CoachBox/build/CoachBox_autogen/EWIEGA46WW/moc_tcpclient.cpp
 EWIEGA46WW/moc_window.cpp
 /home/alan/CoachBox/build/CoachBox_autogen/EWIEGA46WW/moc_window.cpp
-
-/home/alan/CoachBox/custombtn.cpp
-custombtn.h
-/home/alan/CoachBox/custombtn.h
-QDebug
--
 
 /home/alan/CoachBox/custombtn.h
 QPushButton
@@ -277,36 +269,6 @@ string
 /home/alan/CoachBox/rtdb/include/world_model/robot.h
 ../core/core.hpp
 /home/alan/CoachBox/rtdb/include/core/core.hpp
-
-/home/alan/CoachBox/rtdb/rtdb_api.cpp
-stdio.h
--
-stdlib.h
--
-string.h
--
-sys/time.h
--
-sys/types.h
--
-sys/ipc.h
--
-sys/shm.h
--
-time.h
--
-errno.h
--
-include/rtdb/rtdb_defs.h
-/home/alan/CoachBox/rtdb/include/rtdb/rtdb_defs.h
-include/rtdb/rtdb_user.h
-/home/alan/CoachBox/rtdb/include/rtdb/rtdb_user.h
-sstream
--
-
-/home/alan/CoachBox/slidepage.cpp
-slidepage.h
-/home/alan/CoachBox/slidepage.h
 
 /home/alan/CoachBox/slidepage.h
 QLabel
